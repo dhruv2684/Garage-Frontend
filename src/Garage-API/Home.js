@@ -105,7 +105,7 @@ const Home = () => {
               service.map((el, index) => {
                 return <div className="col-lg-3 col-sm-6 col-12 "  key={index} onClick={card} >
                   <Card className='p-0 box'>
-                    <div className="img-box"><Card.Img variant="top" className='p-0' src={'https://garage-api-1vrb.onrender.com/images/' + el.image} /></div>
+                    <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={'https://garage-api-1vrb.onrender.com/images/' + el.image} /></div>
                     <Card.Body>
                       <div className='icon-color'><Card.Title className='pt-1 fw-bold  text-uppercase' >{el.serviceName}</Card.Title></div>
                       {/* <p className='pt-1  mb-2 fs-18 text-color'>{el.decription}</p>
@@ -119,34 +119,6 @@ const Home = () => {
           </Row>
         </Container>
       </Container>
-
-      {/* -  -  -  -  slider   -  -  -    */}
-      {/* <Container fluid className='text-white pt-5 pb-5 bg-lite'>
-        <Container className="">
-          <Row className=" py-5 gap-4">
-            <div className="slider-container">
-              <Slider {...settings}>
-                {
-                  service.map((el, index) => {
-                    return <div className='col-4'>
-
-                      <Card style={{ width: '363px' }} key={index} onClick={card} className='p-0 box pos-rel '>
-                        <div className="img-box border-bottom"><Card.Img variant="top" className='p-0' src={'https://garage-api-1vrb.onrender.com/images/' + el.image} /></div>
-                        <Card.Body>
-                          <div className='icon-color'><Card.Title className='pt-1 mb-2 fw-bold  text-uppercase' >{el.serviceName}</Card.Title></div>
-                          <p className='pt-1  mb-2 fs-18 text-color'>{el.decription}</p>
-                          <Card.Text className='pt-1 '>${el.cost}</Card.Text>
-                        </Card.Body>
-                        <a href="/" className="text-white hov  fw-bold p-3">More Details..!</a>
-                      </Card>
-                    </div>
-                  })
-                }
-              </Slider>
-            </div>
-          </Row>
-        </Container>
-      </Container> */}
 
 
       {/*   Our Process ✅✅*/}
@@ -226,24 +198,6 @@ const Home = () => {
         </Container>
       </Container>
 
-      {/* Appointment */}
-      {/* <Container fluid className='mt-5  '>
-        <Row>
-          <div className='p-0'>
-            <img height="" className='w-100 p-0 ' src="https://assets.architecturaldigest.in/photos/600825b81363405bf8eb5086/16:9/w_2560%2Cc_limit/Garage-Rend_03_A-1366x768.jpg" alt="" />
-          </div>
-          <div className='pos-ab'>
-            <div className="black-box p-5 ms-4 text-white">
-              <h6 className='fw-bold'>WHAT WE DO <PiArrowBendRightDownFill className='fs-3 mt-2 ms-1 icon-color' /></h6>
-              <h1>Our Services</h1>
-              <div className='mt-4'>
-                <a href="/" className="text-white fw-bold bn-btn">Book Now <FaLongArrowAltRight /></a>
-              </div>
-            </div>
-          </div>
-        </Row>
-      </Container> */}
-
     </div>
   )
 }
@@ -251,30 +205,3 @@ const Home = () => {
 export default Home
 
 
-{/* <div className='container-fluid bg-lite text-dark'>
-        <div className="container">
-          <div className="row d-flex py-5">
-            {
-              service.map((el, index) => {
-                return <div className="col-4 box p-0 bg-white m-3 bor" key={index} onClick={card}>
-
-                  <div className=" text-dark pos-rel">
-                    <div className="card-icon rounded-circle"><RiServiceFill className='icon-color fs-2' /></div>
-                    <div className="img-box"><img className='w-100' src={'https://garage-api-1vrb.onrender.com/images/' + el.image} alt="" /></div>
-                    <div className='p-3'>
-                      <h4 className='pt-1 fs-6 mb-0 fw-bold icon-color' >{el.serviceName}</h4>
-                      <p className='pt-1  mb-0 fs-18'>{el.decription}</p>
-                      <h6 className='pt-1 f-color'>${el.cost}</h6>
-                      <div>
-                        <a href="/" className="text-dark hov details fw-bold">More Details..!</a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              })
-            }
-          </div>
-        </div>
-</div> */}
