@@ -4,6 +4,10 @@ import { Link, useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import img from "../Garage Img/main.jpg"
 import img4 from "../Garage Img/4.jpg"
 
+import img2 from "../Garage Img/1.jpg"
+import img3 from "../Garage Img/5.jpg"
+import img5 from "../Garage Img/3.jpg"
+
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { PiArrowBendRightDownFill } from "react-icons/pi";
 import axios from 'axios';
@@ -85,6 +89,53 @@ const Allservice = () => {
             <div className='text-white text-center pb-md-5'>
               <h1 className='fs-50'>Our Services <PiArrowBendRightDownFill className='fs-1 mt-2 icon-color' /></h1>
             </div>
+          </Row>
+          <Row>
+            <div className="col-lg-3 col-sm-6 col-12" onClick={card} >
+              <Card className='p-0 box'>
+                <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={img3} /></div>
+                <Card.Body>
+                  <div className='icon-color'><Card.Title className='pt-1 fw-bold  text-uppercase' >Car Wash & Polish</Card.Title></div>
+                  {/* <p className='pt-1  mb-2 fs-18 text-color'>decription</p>
+                    <Card.Text className='pt-1'>$cost</Card.Text> */}
+                </Card.Body><hr className='icon-color mt-0' />
+                <a href="/all/service" className="text-white hov  fw-bold ps-3 pb-2">More Details..!</a>
+              </Card>
+            </div>
+            <div className="col-lg-3 col-sm-6 col-12" onClick={card} >
+              <Card className='p-0 box'>
+                <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={img2} /></div>
+                <Card.Body>
+                  <div className='icon-color'><Card.Title className='pt-1 fw-bold  text-uppercase' >Tire Change & Repair</Card.Title></div>
+                  {/* <p className='pt-1  mb-2 fs-18 text-color'>decription</p>
+                    <Card.Text className='pt-1'>$cost</Card.Text> */}
+                </Card.Body><hr className='icon-color mt-0' />
+                <a href="/all/service" className="text-white hov  fw-bold ps-3 pb-2">More Details..!</a>
+              </Card>
+            </div>
+            <div className="col-lg-3 col-sm-6 col-12" onClick={card} >
+              <Card className='p-0 box'>
+                <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={img5} /></div>
+                <Card.Body>
+                  <div className='icon-color'><Card.Title className='pt-1 fw-bold  text-uppercase' >Engine Maintenance</Card.Title></div>
+                  {/* <p className='pt-1  mb-2 fs-18 text-color'>decription</p>
+                    <Card.Text className='pt-1'>$cost</Card.Text> */}
+                </Card.Body><hr className='icon-color mt-0' />
+                <a href="/all/service" className="text-white hov  fw-bold ps-3 pb-2">More Details..!</a>
+              </Card>
+            </div>
+            <div className="col-lg-3 col-sm-6 col-12" onClick={card} >
+              <Card className='p-0 box'>
+                <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={img4} /></div>
+                <Card.Body>
+                  <div className='icon-color'><Card.Title className='pt-1 fw-bold  text-uppercase' >Battery Replacement</Card.Title></div>
+                  {/* <p className='pt-1  mb-2 fs-18 text-color'>decription</p>
+                    <Card.Text className='pt-1'>$cost</Card.Text> */}
+                </Card.Body><hr className='icon-color mt-0' />
+                <a href="/all/service" className="text-white hov  fw-bold ps-3 pb-2">More Details..!</a>
+              </Card>
+            </div>
+
           </Row>
           <Row className=" py-lg-5 py-3 g-3">
             {

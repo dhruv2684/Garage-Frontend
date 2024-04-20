@@ -8,6 +8,9 @@ import Slider from "react-slick";
 import main from "../Garage Img/main.jpg"
 import img1 from "../Garage Img/6.jpg"
 import img2 from "../Garage Img/1.jpg"
+import img3 from "../Garage Img/5.jpg"
+import img4 from "../Garage Img/4.jpg"
+import img5 from "../Garage Img/3.jpg"
 
 
 import { RiServiceFill } from "react-icons/ri";
@@ -100,10 +103,56 @@ const Home = () => {
               <h1 className='fs-50'>Our Services <PiArrowBendRightDownFill className='fs-1 mt-2 icon-color' /></h1>
             </div>
           </Row>
+          <Row>
+            <div className="col-lg-3 col-sm-6 col-12" onClick={card} >
+              <Card className='p-0 box'>
+                <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={img2} /></div>
+                <Card.Body>
+                  <div className='icon-color'><Card.Title className='pt-1 fw-bold  text-uppercase' >Tire Change & Repair</Card.Title></div>
+                  {/* <p className='pt-1  mb-2 fs-18 text-color'>decription</p>
+                    <Card.Text className='pt-1'>$cost</Card.Text> */}
+                </Card.Body><hr className='icon-color mt-0' />
+                <a href="/all/service" className="text-white hov  fw-bold ps-3 pb-2">More Details..!</a>
+              </Card>
+            </div>
+            <div className="col-lg-3 col-sm-6 col-12" onClick={card} >
+              <Card className='p-0 box'>
+                <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={img3} /></div>
+                <Card.Body>
+                  <div className='icon-color'><Card.Title className='pt-1 fw-bold  text-uppercase' >Car Wash & Polish</Card.Title></div>
+                  {/* <p className='pt-1  mb-2 fs-18 text-color'>decription</p>
+                    <Card.Text className='pt-1'>$cost</Card.Text> */}
+                </Card.Body><hr className='icon-color mt-0' />
+                <a href="/all/service" className="text-white hov  fw-bold ps-3 pb-2">More Details..!</a>
+              </Card>
+            </div>
+            <div className="col-lg-3 col-sm-6 col-12" onClick={card} >
+              <Card className='p-0 box'>
+                <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={img4} /></div>
+                <Card.Body>
+                  <div className='icon-color'><Card.Title className='pt-1 fw-bold  text-uppercase' >Battery Replacement</Card.Title></div>
+                  {/* <p className='pt-1  mb-2 fs-18 text-color'>decription</p>
+                    <Card.Text className='pt-1'>$cost</Card.Text> */}
+                </Card.Body><hr className='icon-color mt-0' />
+                <a href="/all/service" className="text-white hov  fw-bold ps-3 pb-2">More Details..!</a>
+              </Card>
+            </div>
+            <div className="col-lg-3 col-sm-6 col-12" onClick={card} >
+              <Card className='p-0 box'>
+                <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={img5} /></div>
+                <Card.Body>
+                  <div className='icon-color'><Card.Title className='pt-1 fw-bold  text-uppercase' >Engine Maintenance</Card.Title></div>
+                  {/* <p className='pt-1  mb-2 fs-18 text-color'>decription</p>
+                    <Card.Text className='pt-1'>$cost</Card.Text> */}
+                </Card.Body><hr className='icon-color mt-0' />
+                <a href="/all/service" className="text-white hov  fw-bold ps-3 pb-2">More Details..!</a>
+              </Card>
+            </div>
+          </Row>
           <Row className=" py-lg-5 py-3 g-3">
             {
               service.map((el, index) => {
-                return <div className="col-lg-3 col-sm-6 col-12 "  key={index} onClick={card} >
+                return <div className="col-lg-3 col-sm-6 col-12 " key={index} onClick={card} >
                   <Card className='p-0 box'>
                     <div className="img-box" onClick={card}><Card.Img variant="top" className='p-0' src={'https://garage-api-1vrb.onrender.com/images/' + el.image} /></div>
                     <Card.Body>
@@ -177,7 +226,7 @@ const Home = () => {
           </Row>
           <Row className='align-items-center'>
             <div className="col-md-6 position-relative">
-                <img className='img-fluid w-100' src={img2} alt="" />
+              <img className='img-fluid w-100' src={img2} alt="" />
             </div>
             <div className="col-md-6 p-lg-5 p-4">
               {/* <h6 className=' ps-2 fs-14'>TESTIMONIALS <PiArrowBendRightDownFill className='fs-3 mt-2 ms-1 icon-color' /></h6> */}
@@ -187,7 +236,7 @@ const Home = () => {
                 <a href="/" className="text-white fw-bold bn-btn">Read More <FaLongArrowAltRight /></a>
               </div>
               <div className='d-flex mt-4 align-items-center text-sm-center '>
-                <img  width="15%" className='rounded-circle ' src={img1} alt="" />
+                <img width="15%" className='rounded-circle ' src={img1} alt="" />
                 <div className='ms-3'>
                   <h6 className='mb-0 mt-3 icon-color'>Customer Name</h6>
                   <p className='text-color'>Customer</p>
